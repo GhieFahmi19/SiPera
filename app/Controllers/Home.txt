@@ -1,0 +1,49 @@
+<?php
+
+namespace App\Controllers;
+
+// use
+//use App\Controllers\Frontend\AdminController;
+use App\Controllers\Frontend\FrontController;
+
+// or
+// class Home extends AdminController
+
+class Home extends FrontController
+{
+    /**
+     * Class variables - public, private, protected and static.
+     * -----------------------------------------------------------------------
+     */
+
+
+    /**
+     * __construct ()
+     * -----------------------------------------------------------------------
+     *
+     * Class    Constructor
+     *
+     * NOTE: Not needed if not setting values or extending a Class.
+     *
+     */
+    public function __construct(...$params)
+    {
+        parent::__construct(...$params);
+    }
+
+    public function index()
+    {
+        echo view('View/home);
+    }
+
+
+    //------------------------------------------------------------------------
+
+}   // End of Class Home
+
+/**
+ * ---------------------------------------------------------------------------
+ * Filename: Home.php
+ * Location: ./application/Controllers/Home.php
+ * ---------------------------------------------------------------------------
+ */

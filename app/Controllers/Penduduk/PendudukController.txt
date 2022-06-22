@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Controllers\Penduduk;
+
+use CodeIgniter\Controller;
+use App\Models\M_penduduk;
+
+class PendudukController extends Controller
+{
+	public function __construct()
+	{
+		$this->model = new \App\Models\M_penduduk();
+	}
+	public function kelola_penduduk()
+	{
+
+		return view('penduduk/v_data_penduduk');
+	}
+
+	public function formtambah()
+	{
+		return view('form_tambah');
+	}
+}
